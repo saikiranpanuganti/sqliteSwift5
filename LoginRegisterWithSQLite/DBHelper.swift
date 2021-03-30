@@ -57,13 +57,12 @@ class DBHelper {
     }
     
     
-    func insert(id : Int, uid : String, password : String, completion :((InsertResult) -> Void)) {
+    func insert(uid : String, password : String) {
         let users = read()
         print(users)
         for user in users {
             if user.userId == uid {
                 print("user details are : ", user.id, user.userId, user.password)
-                completion(InsertResult.loggedIn)
                 return
             }
         }
@@ -76,14 +75,14 @@ class DBHelper {
             
             if sqlite3_step(insertStatement) == SQLITE_DONE {
                 print("Successfully inserted row. ", uid, password)
-                completion(InsertResult.registration)
+                
             }else {
                 print("Could not insert row.")
-                completion(InsertResult.failed)
+                
             }
         }else {
             print("INSERT statement could not be prepared.")
-            completion(InsertResult.failed)
+            
         }
         sqlite3_finalize(insertStatement)
     }
