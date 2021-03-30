@@ -10,7 +10,7 @@ import Foundation
 
 
 struct User {
-    var userId : Int?
-    var userUid : String?
+    var id : Int?
+    var userId : String?
     var password : String?
 }

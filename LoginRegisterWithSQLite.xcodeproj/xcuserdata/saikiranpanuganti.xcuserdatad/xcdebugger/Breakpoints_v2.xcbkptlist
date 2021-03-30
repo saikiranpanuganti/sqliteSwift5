@@ -7,32 +7,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A6C24FCB-EB02-4FDF-8B27-72E4B13705A3"
+            uuid = "44AC3F58-E6AA-473C-A14C-0061C1B41A89"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LoginRegisterWithSQLite/SqLiteHelper.swift"
+            filePath = "LoginRegisterWithSQLite/DBHandler.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "insert(id:uid:password:completion:)"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "prepareDatafile()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D17FA05F-BA5F-4BCD-B8E2-9A31377A4508"
+            uuid = "98507D1B-717F-4883-B0AC-7B898000EB00"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LoginRegisterWithSQLite/SqLiteHelper.swift"
+            filePath = "LoginRegisterWithSQLite/DBHandler.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "insert(id:uid:password:completion:)"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "prepareDatafile()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A600E813-E875-41A9-AD98-D4245022045E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LoginRegisterWithSQLite/DBHandler.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "prepareDatafile()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

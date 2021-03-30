@@ -38,16 +38,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender : UIButton) {
-        
         if let userid = userID.text, let password = password.text {
-            let users = DBHelper().read()
-            DBHelper().insert(id: users.count + 1, uid: userid, password: password) { (result) in
-                if result == .registered {
-                    print("Registeration Success")
-                }else if result == .loggedIn {
-                    print("Logged in success")
+            DBHelper().insert(id: 0, uid: userid, password: password) { (result) in
+                if result == .loggedIn {
+                    print("LoggedIn")
+                }else if result == .registration {
+                    print("Registration")
                 }else {
-                    print("Failed to login or register")
+                    print("Failed")
                 }
             }
         }
